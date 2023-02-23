@@ -17,9 +17,11 @@ public class FileUploadPopup {
 		driver.get("file:///D:/Naukri.html");
 		Thread.sleep(2000);
 		
-		File f=new File("./data/ravisingh resume.docx");
+		File f=new File("./data/data2.property");
+		Thread.sleep(3000);
 		String absolutepath = f.getAbsolutePath();
+		Thread.sleep(3000);
 		driver.findElement(By.id("cv")).sendKeys(absolutepath);
-		
+		Thread.sleep(3000);
 	}
 }
